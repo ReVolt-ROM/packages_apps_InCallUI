@@ -654,8 +654,8 @@ public class InCallPresenter implements CallList.Listener {
             mInCallActivity = null;
         }
 
-        boolean nonIntrusiveDisabled = Settings.AOKP.getInt(mContext.getContentResolver(),
-                Settings.AOKP.NON_INTRUSIVE_INCALL, 1) == 0;
+        boolean nonIntrusiveDisabled = Settings.REVOLT.getInt(mContext.getContentResolver(),
+                Settings.REVOLT.NON_INTRUSIVE_INCALL, 1) == 0;
 
         final PowerManager pm = (PowerManager) mContext.getSystemService(Context.POWER_SERVICE);
         // If the screen is on, we'll prefer to not interrupt the user too much and slide in a card
